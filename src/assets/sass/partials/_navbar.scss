@@ -1,0 +1,53 @@
+.topbar{
+      display: flex;
+      width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: green;
+    .nav-bar{
+        height: $nav-height;
+        background: $default-bg;
+        &--left{
+            display: flex;
+            position: relative;
+            width: $nav-left-width;
+            text-align: center;
+                padding-left: 77px;
+        }
+        .search {
+
+        }
+        #menu{
+              fill: brown;
+      }
+
+
+        &--right{
+            margin-left: $nav-left-width;
+            min-height: $nav-height;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+        }
+        &__lists{
+            list-style: none;
+            &--left{
+              background: green;
+
+            }
+            &--right{
+            display: flex;
+            display: flex;
+            padding-left: 362px;
+            position: absolute;
+            }
+            &__link{
+
+            }
+        }
+    }
+}
