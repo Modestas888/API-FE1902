@@ -6,6 +6,8 @@
     left: 0;
     z-index: 999;
     background: green;
+    padding-top: 10px;
+
     .nav-bar{
         height: $nav-height;
         background: $default-bg;
@@ -16,38 +18,48 @@
             text-align: center;
                 padding-left: 77px;
         }
-        .search {
-
-        }
-        #menu{
-              fill: brown;
-      }
-
 
         &--right{
             margin-left: $nav-left-width;
             min-height: $nav-height;
             display: -webkit-box;
             display: -ms-flexbox;
-            display: flex;
+            // display: flex;
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
         }
+
+
         &__lists{
             list-style: none;
+
             &--left{
               background: green;
+                }
 
-            }
+          .svg {
+            &-icon {
+              overflow: hidden;
+    vertical-align: middle;
+    height: 40px;
+    width: 100px;
+    fill: antiquewhite;
+          }
+
+
+.search {
+
+}
+
             &--right{
-            display: flex;
-            display: flex;
-            padding-left: 362px;
-            position: absolute;
+              position: absolute;
+      padding-left: 502px;
+      display: flex;
             }
-            &__link{
+            &__link {
 
             }
+          }
         }
     }
 }
