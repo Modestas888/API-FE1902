@@ -1,8 +1,29 @@
 @import "variables.scss";
+// @import "icons.scss";
+// @import "layout.scss";
+// @import "utils.scss";
 body {
   margin: 0;
 }
 ul {
   padding: 0;
   margin: 0;
+}
+body {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section-container{
+  margin-top: $nav-height + 20;
+  margin-left: $nav-left-width + 20;
+}
+p {
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
 }

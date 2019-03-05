@@ -1,65 +1,47 @@
-.topbar{
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  .nav-bar {
+    position: relative;
+    height: $nav-height;
+    background: $default-bg;
+    &--left {
+      float: left;
+      text-align: center;
+      width: $nav-left-width;
+    }
+    &--right {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background: green;
-    padding-top: 10px;
-
-    .nav-bar{
-        height: $nav-height;
-        background: $default-bg;
-        &--left{
-            display: flex;
-            position: relative;
-            width: $nav-left-width;
-            text-align: center;
-                padding-left: 77px;
-        }
-
-        &--right{
-            margin-left: $nav-left-width;
-            min-height: $nav-height;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            // display: flex;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-        }
-
-
-        &__lists{
-            list-style: none;
-
-            &--left{
-              background: green;
-                }
-
-          .svg {
-            &-icon {
-              overflow: hidden;
-    vertical-align: middle;
-    height: 40px;
-    width: 100px;
-    fill: antiquewhite;
-          }
-
-
-.search {
-
+      -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+          justify-content: space-between;
+    }
+    &__lists {
+      line-height: $nav-height;
+      &--left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      &--right {
+        float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      &__link {
+        padding: 0 20px;
+        display: inline-block;
+      }
+    }
+  }
 }
 
-            &--right{
-              position: absolute;
-      padding-left: 502px;
-      display: flex;
-            }
-            &__link {
-
-            }
-          }
-        }
-    }
+input, button {
+  height: 20px;
 }
