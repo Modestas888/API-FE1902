@@ -1,7 +1,7 @@
 @import "variables.scss";
-// @import "icons.scss";
-// @import "layout.scss";
-// @import "utils.scss";
+@import "layouts.scss";
+@import "utils.scss";
+@import "icons.scss";
 body {
   margin: 0;
 }

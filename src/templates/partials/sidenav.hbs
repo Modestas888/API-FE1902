@@ -1,90 +1,93 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<div class="side-menu">
+  <ul class="side-menu__lists">
+    <li class="side-menu__lists__title">Main</li>
+  </ul>
+  <ul class="side-menu__lists">
 
-    <div class="side-menu">
-      <ul class="side-menu__lists--title side-menu__lists--title">
-        <li class="side-menu__lists__title">Main</li>
-      </ul>
-      <ul class="side-menu__lists">
+    <li class="side-menu__lists__list{{#is basename 'dashboard'}} active{{/is}}">
+       <a href="#">
+         <svg class="svg-icon">
+           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
+       </svg>
+     Dashboard</a>
+   </li>
 
-
-        <li class="side-menu__lists__list"> <a href="#"><svg class="svg-iconhome">
-               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
-           </svg>
-         Dashboard</a>
-       </li>
-
-        <li class="side-menu__lists__list"> <a href="#"><svg class="svg-iconpaint">
-               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#paint"></use>
-           </svg>UI Kit</a>
-       </li>
-          <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconsettings">
-                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings"></use>
-             </svg> Typography</a> </li>
+    <li class="side-menu__lists__list{{#is basename 'ui_kit'}} active{{/is}}">
+      <a href="#">
+        <svg class="svg-icon">
+           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#paint"></use>
+       </svg>UI Kit</a>
+   </li>
+      <li class="side-menu__lists__list{{#is basename 'typography'}} active{{/is}}">
+        <a href="#"><svg class="svg-icon">
+             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings"></use>
+         </svg> Typography</a> </li>
 
 
-          <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconcomponents">
-                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-             </svg>Components</a> </li>
-            <li class="side-menu__lists__list"> <a href="#"><svg class="svg-iconicons">
-                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons"></use>
-               </svg>Icons</a> </li>
+      <li class="side-menu__lists__list{{#is basename 'components'}} active{{/is}}">
+        <a href="#"><svg class="svg-icon">
+             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
+         </svg>Components</a> </li>
+
+        <li class="side-menu__lists__list{{#is basename 'icons'}} active{{/is}}">
+          <a href="#">
+            <svg class="svg-icon">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons"></use>
+           </svg>Icons</a> </li>
 
 
-            <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconforms">
-                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forms"></use>
-               </svg>Forms</a> </li>
-
-
-
-
-               <ul class="side-menu__lists--title side-menu__lists--title">
-                 <li class="side-menu__lists__title">More</li>
-               </ul>
-
-               <li class="side-menu__lists__list"><a href="#"><svg class="svg-icontables">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tables"></use>
-                  </svg>Tables</a> </li>
-
-                  <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconcharts">
-                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#charts"></use>
-                     </svg>Charts</a> </li>
-                     <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconmaps">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
-                        </svg>Maps</a> </li>
-                        <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconmail">
-                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
-                           </svg>Mail</a> </li>
-
-
-
-                           <ul class="side-menu__lists--title side-menu__lists--title">
-                             <li class="side-menu__lists__title">Extras</li>
-                           </ul>
-
-                           <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconpages">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pages"></use>
-                              </svg>Tables</a> </li>
-
-                              <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconextras">
-                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
-                                 </svg>Charts</a> </li>
-                                 <li class="side-menu__lists__list"><a href="#"><svg class="svg-iconmultilevel">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilevel"></use>
-                                    </svg>Maps</a> </li>
-
-                                    <li class="side-menu__lists__list"> <a href="#"></a> </li>
-                                    </ul>
-
-    </div>
+        <li class="side-menu__lists__list{{#is basename 'forms'}} active{{/is}}">
+          <a href="#">
+          <svg class="svg-icon">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forms"></use>
+           </svg>Forms</a> </li>
 
 
 
 
-  </body>
-</html>
+           <ul class="side-menu__lists">
+             <li class="side-menu__lists__title">More</li>
+           </ul>
+
+           <li class="side-menu__lists__list{{#is basename 'tables'}} active{{/is}}">
+             <a href="#"><svg class="svg-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tables"></use>
+              </svg>Tables</a> </li>
+
+              <li class="side-menu__lists__list{{#is basename 'charts'}} active{{/is}}">
+                <a href="#"><svg class="svg-icon">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#charts"></use>
+                 </svg>Charts</a> </li>
+                 <li class="side-menu__lists__list{{#is basename 'maps'}} active{{/is}}">
+                   <a href="#"><svg class="svg-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+                    </svg>Maps</a> </li>
+                    <li class="side-menu__lists__list{{#is basename 'mail'}} active{{/is}}">
+                      <a href="#"><svg class="svg-icon">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
+                       </svg>Mail</a> </li>
+
+
+
+                       <ul class="side-menu__list">
+                         <li class="side-menu__lists__title">Extras</li>
+                       </ul>
+
+                       <li class="side-menu__lists__list{{#is basename 'pages'}} active{{/is}}">
+                         <a href="#"><svg class="svg-icon">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pages"></use>
+                          </svg>Pages</a> </li>
+
+                          <li class="side-menu__lists__list{{#is basename 'extras'}} active{{/is}}">
+                            <a href="#"><svg class="svg-icon">
+                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
+                             </svg>Extras</a> </li>
+                             <li class="side-menu__lists__list{{#is basename 'multilevel'}} active{{/is}}">
+                               <a href="#"><svg class="svg-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilevel"></use>
+                                </svg>Multi Level</a> </li>
+
+                                <li class="side-menu__lists__list"> <a href="#"></a> </li>
+                                </ul>
+
+</div>

@@ -24,6 +24,7 @@
     "grunt-svg-sprite": "^1.5.0"
   },
   "dependencies": {
+    "chart.js": "^2.7.3",
     "handlebars": "^4.1.0"
   }
 }

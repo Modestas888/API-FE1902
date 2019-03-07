@@ -1,13 +1,32 @@
-.section-container{
+.section-container {
   margin-top: $nav-height + 20;
   margin-left: $nav-left-width + 15;
+  width: 200px;
 }
+
 .boxes {
--webkit-box-shadow: $box-shadow;
-box-shadow: box-shadow;
-border-radius: $border-radius;
-width: 100%;
-margin: 0 15px;
-background: #fff;
-&:first
+    -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    &__title {
+    }
+    &--right {
+        text-align: right;
+    }
+    &__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -o-object-fit: cover;
+           object-fit: cover;
+           margin: 10px;
+    }
+    &--flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
