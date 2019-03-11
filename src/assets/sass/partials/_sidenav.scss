@@ -1,41 +1,47 @@
 .side-menu {
-      width: 200px;
-top: $nav-height;
   position: fixed;
-  top: &$nav-height;
+  top: $nav-height;
   height: 100%;
-  background: #fff;
-  width: &$nav-left-width;
--webkit-box-shadow: $box-shadow;
-box-shadow: $box-shadow;
-overflow: scroll;
+  background: white;
+  width: $nav-left-width;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  overflow: scroll;
+  padding: 20px 0 80px;
   &__lists {
-    list-style: none;
     &__list {
-      padding: 12px 20px;
+      padding: 12px;
+      font-size: 12px;
       position: relative;
       a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-          text-decoration: none;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
         svg {
-          height: 20px;
-          width: 29px;
-          margin-right: 8px;
-          fill: solid red;
-            }
+          fill: green;
+          margin-right: 10px;
+        }
       }
-      &::after {
+      &:after {
         @include arrow();
       }
+      &.active {
+        border-color: $default-bg;
+          a {
+              background-color: $bg-color;
+              border-left: 2px solid blue;
+          }
+      }
     }
-&__title {
-  padding: 12px 20px;
-  font-size: 12px;
-}
+    &__title {
+      padding: 12px 20px;
+      font-size: 12px;
+    }
   }
 }
