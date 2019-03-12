@@ -39,6 +39,31 @@
         display: inline-block;
       }
     }
+
+.dropdown-menu {
+  &__item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 20px;
+    @include circle($height: 40px, $width: 40px);
+
+
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  &__title {
+    margin-left: 10px;
+    h5{
+color: green;
+
+    }
+p {
+color: salmon;
+}
+  }}
+}
+
   }
 }
 
