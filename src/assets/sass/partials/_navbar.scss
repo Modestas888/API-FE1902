@@ -53,6 +53,9 @@
         -ms-flex-align: center;
             align-items: center;
   &__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 10px;
     h5{
 color: green;

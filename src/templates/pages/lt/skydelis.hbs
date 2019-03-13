@@ -1,72 +1,7 @@
+---
+custom_basename: dashboard
+---
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 col-xl-3">
-            <div class="boxes">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="circle circle--border circle--success">
-                            <!-- <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#visibility"></use>
-                            </svg> -->
-                        </div>
-                    </div>
-                    <div class="col-8 v-align">
-                        <h5>64,570</h5>
-                        <p>Today's visits</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-xl-3">
-            <div class="boxes">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="circle circle--border circle--primary">
-                            <!-- <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#timeline"></use>
-                            </svg> -->
-                        </div>
-                    </div>
-                    <div class="col-8 v-align">
-                        <h5>64,570</h5>
-                        <p>Today's visits</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-xl-3">
-            <div class="boxes">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="circle circle--border circle--danger">
-                            <!-- <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trackChanges"></use>
-                            </svg> -->
-                        </div>
-                    </div>
-                    <div class="col-8 v-align">
-                        <h5>64,570</h5>
-                        <p>Today's visits</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-xl-3">
-            <div class="boxes">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="circle circle--border circle--secondary">
-                            <!-- <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorite"></use>
-                            </svg> -->
-                        </div>
-                    </div>
-                    <div class="col-8 v-align">
-                        <h5>64,570</h5>
-                        <p>Today's visits</p>
-                    </div>
-                </div>
-            </div><div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-xl-3">
             <div class="boxes boxes--right">
@@ -80,7 +15,7 @@
                     </div>
                     <div class="col-8 v-align">
                         <h5>64.570</h5>
-                        <p>Today's visits</p>
+                        <p>{{dashboard.stats.visits}}</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +32,7 @@
                     </div>
                     <div class="col-8 v-align">
                         <h5>31.570</h5>
-                        <p>Total Revenue</p>
+                        <p>{{dashboard.stats.revenue}}</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +49,7 @@
                     </div>
                     <div class="col-8 v-align">
                         <h5>280</h5>
-                        <p>Total Sales</p>
+                        <p>{{dashboard.stats.sales}}</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +66,7 @@
                     </div>
                     <div class="col-8 v-align">
                         <h5>0.16%</h5>
-                        <p>Conversion</p>
+                        <p>{{dashboard.stats.conversion}}</p>
                     </div>
                 </div>
             </div>
@@ -140,19 +75,19 @@
     <div class="row">
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Yearly sales report</h6>
+                <h6 class="boxes__title">{{default.dashboard.yearly}}</h6>
                 <canvas id="myChart"></canvas>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
+                <h6 class="boxes__title">{{default.dashboard.revenue}}</h6>
                 <canvas id="myChart1"></canvas>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
+                <h6 class="boxes__title">{{default.dashboard.revenue}}</h6>
                 <canvas id="myChart2"></canvas>
             </div>
         </div>
@@ -160,57 +95,57 @@
     <div class="row">
         <div class="col-xl-8">
             <div class="boxes">
-                <h6 class="boxes__title">LATEST PROJECTS</h6>
-                <p class="boxes__subheading">Your awesome text goes here</p>
+                <h6 class="boxes__title">{{default.dashboard.latest_projects}}</h6>
+                <p class="boxes__subheading">{{default.dashboard.awesome_text}}</p>
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Project name</th>
-                            <th scope="col">Start date</th>
-                            <th scope="col">Due Date</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Asing</th>
+                            <th scope="col">{{default.dashboard.project_name}}</th>
+                            <th scope="col">{{default.dashboard.start_date}}</th>
+                            <th scope="col">{{default.dashboard.due_date}}</th>
+                            <th scope="col">{{default.dashboard.status}}</th>
+                            <th scope="col">{{default.dashboard.assing}}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Minton Admin</td>
-                            <td>01/02.2018</td>
-                            <td>01/02.2019</td>
+                            <td>01/02/2018</td>
+                            <td>01/02/2019</td>
                             <td>Released</td>
                             <td>Kazkas</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Minton Admin</td>
-                            <td>01/02.2018</td>
-                            <td>01/02.2019</td>
+                            <td>01/02/2018</td>
+                            <td>01/02/2019</td>
                             <td>Released</td>
                             <td>Kazkas</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Minton Admin</td>
-                            <td>01/02.2018</td>
-                            <td>01/02.2019</td>
+                            <td>01/02/2018</td>
+                            <td>01/02/2019</td>
                             <td>Released</td>
                             <td>Kazkas</td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
                             <td>Minton Admin</td>
-                            <td>01/02.2018</td>
-                            <td>01/02.2019</td>
+                            <td>01/02/2018</td>
+                            <td>01/02/2019</td>
                             <td>Released</td>
                             <td>Kazkas</td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
                             <td>Minton Admin</td>
-                            <td>01/02.2018</td>
-                            <td>01/02.2019</td>
+                            <td>01/02/2018</td>
+                            <td>01/02/2019</td>
                             <td>Released</td>
                             <td>Kazkas</td>
                         </tr>
@@ -222,31 +157,31 @@
             <div class="row">
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <!-- <img class="boxes__image" src="assets/images/ernestas.jpg" alt="user picture"> -->
+                        <img class="boxes__image" src="../assets/images/ernestas.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                             <h6>User 1</h6>
                             <p>user1@gmail.com</p>
-                            <p>Admin</p>
+                            <p class="user-role user-role--admin">{{default.dashboard.admin}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <!-- <img class="boxes__image" src="assets/images/ernestas.jpg" alt="user picture"> -->
+                        <img class="boxes__image" src="../assets/images/ernestas.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                             <h6>User 2</h6>
                             <p>user2@gmail.com</p>
-                            <p>User</p>
+                            <p class="user-role user-role--user">{{default.dashboard.user}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <!-- <img class="boxes__image" src="assets/images/ernestas.jpg" alt="user picture"> -->
+                        <img class="boxes__image" src="../assets/images/ernestas.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                             <h6>User 3</h6>
                             <p>user3@gmail.com</p>
-                            <p>Admin</p>
+                            <p class="user-role user-role--master">{{default.dashboard.master}}</p>
                         </div>
                     </div>
                 </div>
@@ -254,63 +189,4 @@
         </div>
     </div>
 </div>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xl-4">
-            <div class="boxes">
-                <h6 class="boxes__title">Yearl sales report</h6>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xl-8">
-            <div class="boxes">
-                <h6 class="boxes__title">Latest projects</h6>
-                <p class="boxes__subheading">Your awesome text goes here.</p>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div class="row">
-                <div class="col-12">
-                    <div class="boxes">
-                        <!-- <img class="boxes__image img-fluid" src="assets/images/user.jpg" alt="user picture"> -->
-                        <h6 class="boxes__title"></h6>
-                        <p class="boxes__info"></p>
-                        <p class="boxes__roles"></p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="boxes">
-                        <!-- <img class="boxes__image" src="assets/images/user-1.jpeg" alt="user picture"> -->
-                        <h6 class="boxes__title"></h6>
-                        <p class="boxes__info"></p>
-                        <p class="boxes__roles"></p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="boxes">
-                        <!-- <img class="boxes__image" src="assets/images/user-1.jpeg" alt="user picture"> -->
-                        <h6 class="boxes__title"></h6>
-                        <p class="boxes__info"></p>
-                        <p class="boxes__roles"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- {{#content "chartScript" mode="apend"}}
-<script type="text/javascript" src="../node_modules/chart.js/src/chart.js">
-{{/content}} -->
+<!-- suvardinti lt zodzius -->

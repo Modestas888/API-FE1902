@@ -23,7 +23,7 @@
       <nav class="nav-bar nav-bar--right">
         <ul class="nav-bar__lists nav-bar__lists--left">
           <li>
-            <a class="nav-bar__lists__link" href="#">
+            <a class="nav-bar__lists__link" href="#" id="burger">
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
               </svg>
@@ -81,28 +81,6 @@
     
           <li class="nav-bar__lists__link">
             <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <div class="circle">
-    
-    
-                    <svg class="svg-icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ekranas"></use>
-              </svg>
-              </div>
-            </a>
-    
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ekranas"></use>
-              </svg>
-                </a>
-                  <div class="dropdown-menu" aria-labelledby="activities">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-          </li>
-    
-    
-          <li class="nav-bar__lists__link">
-            <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#language"></use>
               </svg>
@@ -132,7 +110,7 @@
         </ul>
       </nav>
     </div>
-    <div class="side-menu">
+    <div id="side-menu" class="side-menu">
       <ul class="side-menu__lists">
         <li class="side-menu__lists__title">Main</li>
       </ul>
@@ -143,38 +121,38 @@
              <svg class="svg-icon">
                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
            </svg>
-         Dashboard</a>
+      <span>Dashboard</span></a>
        </li>
     
         <li class="side-menu__lists__list">
           <a href="#">
             <svg class="svg-icon">
                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#paint"></use>
-           </svg>UI Kit</a>
+           </svg> <span>UI Kit</span></a>
        </li>
           <li class="side-menu__lists__list">
             <a href="#"><svg class="svg-icon">
                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings"></use>
-             </svg> Typography</a> </li>
+             </svg><span>Typography</span> </a> </li>
     
     
           <li class="side-menu__lists__list">
             <a href="#"><svg class="svg-icon">
                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-             </svg>Components</a> </li>
+             </svg> <span>Components</span></a> </li>
     
             <li class="side-menu__lists__list">
               <a href="#">
                 <svg class="svg-icon">
                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons"></use>
-               </svg>Icons</a> </li>
+               </svg> <span>Icons</span></a> </li>
     
     
             <li class="side-menu__lists__list">
               <a href="#">
               <svg class="svg-icon">
                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forms"></use>
-               </svg>Forms</a> </li>
+               </svg><span>Forms</span></a> </li>
     
                <ul class="side-menu__lists">
                  <li class="side-menu__lists__title">More</li>
@@ -183,20 +161,20 @@
                <li class="side-menu__lists__list">
                  <a href="#"><svg class="svg-icon">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tables"></use>
-                  </svg>Tables</a> </li>
+                  </svg> <span>Tables</span></a> </li>
     
                   <li class="side-menu__lists__list">
                     <a href="#"><svg class="svg-icon">
                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#charts"></use>
-                     </svg>Charts</a> </li>
+                     </svg><span>Charts</span></a> </li>
                      <li class="side-menu__lists__list">
                        <a href="#"><svg class="svg-icon">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
-                        </svg>Maps</a> </li>
+                        </svg> <span>Maps</span></a> </li>
                         <li class="side-menu__lists__list">
                           <a href="#"><svg class="svg-icon">
                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
-                           </svg>Mail</a> </li>
+                           </svg><span>Mail</span></a> </li>
     
     
     
@@ -207,16 +185,16 @@
                            <li class="side-menu__lists__list">
                              <a href="#"><svg class="svg-icon">
                                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pages"></use>
-                              </svg>Pages</a> </li>
+                              </svg><span>Page</span></a> </li>
     
                               <li class="side-menu__lists__list">
                                 <a href="#"><svg class="svg-icon">
                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
-                                 </svg>Extras</a> </li>
+                                 </svg><span>Extras</span></a> </li>
                                  <li class="side-menu__lists__list">
                                    <a href="#"><svg class="svg-icon">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilevel"></use>
-                                    </svg>Multi Level</a> </li>
+                                    </svg><span>Multi Level</span></a> </li>
     
                                     <li class="side-menu__lists__list"> <a href="#"></a> </li>
                                     </ul>
@@ -329,12 +307,10 @@ var chart = new Chart(ctx, {
 });
 </script>
 
-
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/chart.js"></script> -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

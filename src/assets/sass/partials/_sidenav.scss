@@ -7,6 +7,11 @@
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
   overflow: scroll;
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar{
+      display: none;
+  }
   padding: 20px 0 80px;
   &__lists {
     &__list {
@@ -42,6 +47,20 @@
     &__title {
       padding: 12px 20px;
       font-size: 12px;
+    }
+  }
+  &--closed{
+    .side-menu__lists{
+      width: 70px;
+&__list{
+  span{
+    display: none;
+  }
+  &:after {
+    display: none;
+  }
+}
+
     }
   }
 }
