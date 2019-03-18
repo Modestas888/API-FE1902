@@ -1,0 +1,17 @@
+lang: lt
+stats:
+    visits: Šiandienos vizitai
+    revenue: Bendros pajamos
+    sales: Šiandienos pardavimai
+    conversion: Konversija
+    yearly: Metinė pardavimų ataskaita
+    latest_projects: Paskutiniai projektai
+    awesome_text: Tavo afigienas tekstas rašomas čia
+    admin: Aministratorius
+    user: Vartotojas
+    master: Masteris
+    project_name: Projekto vardas
+    start_date: Pradžios data
+    due_date: Vykdymo data
+    status: Statusas
+    assing: Priskyrimas

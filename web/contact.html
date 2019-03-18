@@ -7,6 +7,7 @@
     <title>Pirmas project</title>
 </head>
 <body>
+
     <div class="topbar">
       <nav class="nav-bar nav-bar--left">
         <ul class="nav-bar__lists">
@@ -14,7 +15,7 @@
             <a class="nav-bar__lists__link" href="#">
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menius"></use>
-              </svg> 
+              </svg>
               <span>ADMIN</span>
             </a>
           </li>
@@ -94,7 +95,6 @@
     
           </li>
     
-    
           <li class="nav-bar__lists__link">
           <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <svg class="svg-icon">
@@ -107,6 +107,20 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
+    
+          <li class="nav-bar__lists__link">
+          <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg class="svg-icon">
+                <img class="svg-icon" src="assets/images/user2.jpg" alt="user picture">
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="activities">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+    
         </ul>
       </nav>
     </div>
@@ -133,8 +147,7 @@
           <li class="side-menu__lists__list">
             <a href="#"><svg class="svg-icon">
                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings"></use>
-             </svg><span>Typography</span> </a> </li>
-    
+             </svg> <span>Typography</span> </a> </li>
     
           <li class="side-menu__lists__list">
             <a href="#"><svg class="svg-icon">
@@ -209,7 +222,9 @@
         <h4>WELCOME!</h4>
               </div>
               <div class="col-sm-6 section-title__nav text-right">
-        <span>Title</span>
+              <span><a href="/dashboard.html">Title</a></span>  
+        <!-- <span>Title</span> -->
+        <a id="basename"></a>
         <span id="basename"></span>
               </div>
         
@@ -325,7 +340,7 @@ var chart = new Chart(ctx, {
 });
 </script>
 
-<!-- <script type="text/javascript" src="assets/js/chart.js"></script> -->
+<script type="text/javascript" src="assets/js/chart.js"></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
