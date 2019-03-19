@@ -41,7 +41,7 @@
     }
 
 .dropdown-menu {
-  &__item{
+  &__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -64,12 +64,11 @@
     line-height: 1;
     color: salmon;
               }
-  }}
-}
-
-  }
-}
-
+            }
+          }
+        }
+      }
+    }
 input, button {
   height: 20px;
 }

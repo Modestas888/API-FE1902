@@ -32,7 +32,7 @@ module.exports = function(grunt) {
             layoutdir: 'src/templates/layouts',
             layout: ['default.hbs'],
             partials: ['src/templates/partials/{,*/}*.*', 'src/sprites/svg/*'],
-            helpers: [''],
+            helpers: ['partials'],
             flatten: true
         },
         en: {
