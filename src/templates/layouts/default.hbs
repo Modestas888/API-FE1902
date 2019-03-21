@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <title>Pirmas project</title>
 </head>
-<body>
+<body class="bg-color">
 
     {{>navbar}}
     {{>sidenav}}
@@ -22,7 +22,7 @@
     <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
 
     {{#is default.lang 'lt'}}
-          <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+          <script type="text/javascript" src="../../chart.js/assets/dist/Chart.min.js"></script>
           {{else}}
           <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
           {{/is}}
