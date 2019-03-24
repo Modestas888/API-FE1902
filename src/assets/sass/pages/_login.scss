@@ -20,12 +20,23 @@
 
     }
   }
+  .wrap {
+    margin:0 auto;
+
+    .buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+   color: white;
+   text-decoration:none;
+  padding-left: 126px;
+   border-radius:3px;
+   font-family: 'Poiret One', cursive;
+   font-size:2em;
+  }
+  .btn-green {
+   @include button-bg(#2ecc71);
 }
-.button {
- color: solid red;
- text-decoration:none;
- padding: 5px 10px;
- border-radius: solid black 3px;
- font-family: 'Poiret One', cursive;
- font-size:2em;
+  }
+
 }

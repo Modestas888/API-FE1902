@@ -22,10 +22,12 @@
     <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
 
     {{#is default.lang 'lt'}}
-          <script type="text/javascript" src="../../chart.js/assets/dist/Chart.min.js"></script>
-          {{else}}
-          <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
-          {{/is}}
+    <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+{{else}}
+<script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+{{/is}}
+
+<script type="text/javascript" src="assets/js/chart.js"></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

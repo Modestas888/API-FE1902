@@ -1,11 +1,11 @@
-@mixin default-button {
-  background: solid red;
-    &:hover {
-      background:darken($bg,8%);
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-    &:active {
-      background:darken($bg,25%);
-    }
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,10%);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
 }
