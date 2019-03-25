@@ -1,0 +1,32 @@
+.checkbox {
+input{
+
+  -webkit-appearance:none;
+    -moz-appearance:none;
+          appearance:none;
+          background: transparent;
+          border-radius: 0;
+          cursor: pointer;
+          height: 14px;
+          width: 14px;
+          margin-right: 10px;
+          position: relative;
+          top:0;
+          &:before{
+            border: 2px solid red;
+            border-style: solid;
+            content: "";
+            height: 14px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+          }
+          &:checked:before{
+
+          }
+          &:after{
+            background: #fff;
+          }
+}
+}

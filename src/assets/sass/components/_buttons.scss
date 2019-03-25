@@ -9,3 +9,33 @@
     background:darken($bg,25%);
   }
 }
+
+
+@mixin default-button($height: 50px, $background: $default-btn) {
+
+  display: block;
+  width: auto;
+  height: $height;
+  line-height: $height;
+  background: $background;
+  color:#fff;
+  border-radius: 0;
+  border-radius: 100px;
+  width: 150px;
+  -webkit-transition: $transition;
+  transition: $transition;
+  text-decoration: none;
+text-align: center;
+
+  &:hover{
+    background: $background;
+    -webkit-filter: brightness(85%);
+            filter: brightness(85%);
+  }
+}
+.button-default {
+  @include default-button();
+  &--width{
+    width: 100%;
+  }
+}

@@ -9,7 +9,7 @@ layout: login.hbs
   <div class="login__title">
 
     <svg class="svg-icon">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#visits"></use>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#visits"></use>
     </svg>
     <h1>Minton</h1>
   </div>
@@ -18,13 +18,26 @@ layout: login.hbs
 
 <div class="login__form__item">
   <input type="email" name="email" required="required" value="">
-  <label for="email">USERNAME</label>
+  <label class="label-inside" for="email">USERNAME</label>
 </div>
 
 <div class="login__form__item">
-  <input type="passsword" name="passsword" required="required" value="">
-  <label for="passsword">PASSWORD</label>
+  <input type="passsword" name="passsword" required="required">
+  <label class="label-inside" for="passsword">PASSWORD</label>
 </div>
+
+<div class="login__form__check login__form__item--checkbox">
+  <div class="checkbox">
+    <input type="checkbox" name="passsword" required="required">
+    <label for="passsword">Remenber Me</label>
+  </div>
+
+</div>
+
+
+<button type="button" class="button-default" name="button">Login</button>
+
+
 <div class="wrap">
 <a href="#" class="buttons btn-green">Login</a
 </div>

@@ -23,6 +23,12 @@
       position: relative;
       @include default-input();
       margin-bottom: 20px;
+      &--checkbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 20px;
+      }
 
     }
   }

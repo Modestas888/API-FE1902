@@ -10,7 +10,7 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: none;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
     }
-@mixin default-label($background: "#fff", $selector: label ) {
+@mixin default-label($background: "#fff", $selector: ".label-inside" ) {
   #{$selector} {
     position: absolute;
       background: $background;
@@ -25,7 +25,7 @@ select:-webkit-autofill:focus {
 
   }
 }
-@mixin default-input($selector: input, $background: "#fff", $height: $input-height ) {
+@mixin default-input($selector: "input:not([type=checkbox])", $background: "#fff", $height: $input-height ) {
   #{$selector} {
     width: 100%;
     height: $height;
