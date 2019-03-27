@@ -84,18 +84,12 @@
     
     
           <li class="nav-bar__lists__link">
-            <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a  href="#" role="button" id="notification" >
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#language"></use>
               </svg>
                  </a>
-                 <div class="dropdown-menu" aria-labelledby="activities">
-                   <a class="dropdown-item" href="#">Action</a>
-                   <a class="dropdown-item" href="#">Another action</a>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
-    
-    
+                
           </li>
     
     
@@ -207,7 +201,10 @@
                               <li class="side-menu__lists__list">
                                 <a href="#"><svg class="svg-icon">
                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
-                                 </svg><span>Extras</span></a> </li>
+                                 </svg><span> Extras</span></a> </li>
+    
+    
+    
                                  <li class="side-menu__lists__list">
                                    <a href="#"><svg class="svg-icon">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilevel"></use>
@@ -216,6 +213,24 @@
                                     <li class="side-menu__lists__list"> <a href="#"></a> </li>
                                     </ul>
     
+    </div>
+    <div id="side-menu-right" class="side-menu side-menu--right side-menu--right--closed">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
     </div>
 
     <div class="section-container">

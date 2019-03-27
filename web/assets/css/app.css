@@ -9705,6 +9705,16 @@ a.text-dark:hover, a.text-dark:focus {
   color: #80898e;
 }
 
+.sidenav-closed .topbar .nav-bar--left {
+  width: 70px;
+}
+.sidenav-closed .topbar .nav-bar--left span {
+  display: none;
+}
+.sidenav-closed .section-container {
+  margin-left: 85px;
+}
+
 .bg-color {
   background: #ecf0f1;
 }
@@ -9954,10 +9964,19 @@ input, button {
   overflow: scroll;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+  z-index: 999;
   padding: 20px 0 80px;
 }
 .side-menu::-webkit-scrollbar {
   display: none;
+}
+.side-menu--right {
+  right: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.side-menu--right--closed {
+  right: -240px;
 }
 .side-menu__lists__list {
   padding: 12px;
@@ -10010,6 +10029,9 @@ input, button {
 }
 .side-menu--closed {
   width: 70px;
+}
+.side-menu--closed .side-menu__lists__list {
+  padding: 14px 18px;
 }
 .side-menu--closed .side-menu__lists__list span {
   display: none;

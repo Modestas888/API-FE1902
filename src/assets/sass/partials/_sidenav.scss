@@ -9,8 +9,18 @@
     overflow: scroll;
     -ms-overflow-style: none;  // IE 10+
     overflow: -moz-scrollbars-none;
+    z-index: 999;
     &::-webkit-scrollbar{
         display: none;
+    }
+    &--right{
+      right: 0;
+      -webkit-transition: $transition;
+      transition: $transition;
+      &--closed{
+        right: -$nav-left-width;
+
+      }
     }
     padding: 20px 0 80px;
     &__lists {
@@ -61,6 +71,7 @@
         width: 70px;
         .side-menu__lists {
             &__list {
+              padding: 14px 18px;
                 span {
                     display: none;
                 }

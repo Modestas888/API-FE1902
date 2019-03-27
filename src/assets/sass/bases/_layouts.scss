@@ -39,3 +39,18 @@
        }
     }
 }
+.sidenav-closed{
+  .topbar{
+    .nav-bar{
+      &--left{
+        width: 70px;
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+  .section-container{
+    margin-left: 70px + 15;
+  }
+}

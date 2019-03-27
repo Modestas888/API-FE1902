@@ -84,18 +84,12 @@
     
     
           <li class="nav-bar__lists__link">
-            <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a  href="#" role="button" id="notification" >
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#language"></use>
               </svg>
                  </a>
-                 <div class="dropdown-menu" aria-labelledby="activities">
-                   <a class="dropdown-item" href="#">Action</a>
-                   <a class="dropdown-item" href="#">Another action</a>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
-    
-    
+                
           </li>
     
     
@@ -207,7 +201,10 @@
                               <li class="side-menu__lists__list">
                                 <a href="#"><svg class="svg-icon">
                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
-                                 </svg><span>Extras</span></a> </li>
+                                 </svg><span> Extras</span></a> </li>
+    
+    
+    
                                  <li class="side-menu__lists__list">
                                    <a href="#"><svg class="svg-icon">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilevel"></use>
@@ -216,6 +213,24 @@
                                     <li class="side-menu__lists__list"> <a href="#"></a> </li>
                                     </ul>
     
+    </div>
+    <div id="side-menu-right" class="side-menu side-menu--right side-menu--right--closed">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
     </div>
 
     <div class="section-container">
@@ -235,33 +250,37 @@
           </div>
         <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-6 col-xl-5">
+    <div class="col-6 col-md-4">
         <div class="boxes">
                 <div class="row">
-                <div class="col-5">
-
+                <div class="col-12">
                     <div class="profile">
                       <div class="profile-imagine">
                         <img class="boxes__image" src="assets/images/user2.jpg" alt="user picture">
                         <h4>Mark McKnight</h4>
                         <p>@webdesigner</p>
                           </div>
-                      <div class="wrap">
-                            <a href="#" class="buttons btn-green">Login</a
+                          <div class="">
 
-                            <a href="#" class="buttons btn-green">Login</a
-                              </div>
-                            </div>
+                          <button type="button" class="btn btn-success">Success</button>
+
+                        <button type="button" class="btn btn-danger">Danger</button>
+                          </div>
+
+
 
                             <div class="info">
-                              <h6>Full name:</h6>
-                              <p>Mark A. McKnight</p>
-                                <h6>Mobile</h6>
-                                <p>f(123) 123 1234</p>
-                                  <h6>Email</h6>
-                                  <p>coderthemes@gmail.com</p>
-                                    <h6>Location</h6>
-                                    <p>USA</p>
+                              <h6 class="alignleft">Full name:</h6>
+                              <p class="alignright">Mark A. McKnight</p>
+
+                                <h6 class="alignleft">Mobile</h6>
+                                <p class="alignright">f(123) 123 1234</p>
+
+                                  <h6 class="alignleft">Email</h6>
+                                  <p class="alignright">coderthemes@gmail.com</p>
+
+                                    <h6 class="alignleft">Location</h6>
+                                    <p class="alignright">USA</p>
                             </div>
 
                             <svg class="svg-icon">
@@ -274,50 +293,84 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#language"></use>
                           </svg>
 
+
                     </div>
                 </div>
-                <div class="col-8 v-align">
 
-
-                </div>
             </div>
         </div>
-    </div>
-      <div class="col-lg-6 col-xl-3">
-          <div class="boxes boxes--right">
-              <div class="row">
-                  <div class="col-11">
-                      <div class="aboutme">
-                        <ul>
-                          <li> <h5>ABOUT ME</h5></li>
-                          <li> <h5>GALLERY</h5></li>
-                            <li> <h5>SETTINGS</h5></li>
+          <div class="row">
+        <div class="col-6 col-md-4">
+            <div class="boxes boxes--skill">
+                    <div class="col-12">
+                      <h4>SKILLS</h4>
+                        <div class="skils">
+                          <h6>HTML5</h6>
+                          <h6>PHP</h6>
+                            <h6>Wordpress</h6>
 
-                        </ul>
-
-
-                      </div>
-                  </div>
-                  <div class="col-8 v-align">
-
-
-
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 col-xl-3">
-          <div class="boxes boxes--right">
-              <div class="row">
-                  <div class="col-4">
-                      <div class="skils">
-
-
-                      </div>
-                  </div>
+                        </div>
                     </div>
                       </div>
                         </div>
+                          </div>
+    </div>
+
+
+      <div class="col-12 col-md-8">
+          <div class="boxes boxes--form">
+              <div class="row">
+                  <div class="col-8">
+                      <div class="aboutme">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-secondary active">
+                            <input type="radio" name="options"  autocomplete="off" checked> ABOUT ME
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> GALLERY
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> SETTINGS
+                          </label>
+                        </div>
+                            </div>
+
+
+                          <div class="form-group">
+                            <form>
+
+                            <label for="formGroupExampleInput">Full Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+
+                            <label for="formGroupExampleInput2">Email</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+
+                              <label for="formGroupExampleInput">Username</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+
+
+                              <label for="formGroupExampleInput2">Passsword</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+
+                              <label for="formGroupExampleInput">Re-passsword</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+
+
+                              <label for="formGroupExampleInput2">About Me</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                            </div>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </form>
+
+
+
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
                           </div>
                             </div>
 
