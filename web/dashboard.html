@@ -34,7 +34,7 @@
           <li>
             <button class="btn btn-default" type="submit" name="search">
               <svg class="svg-icon">
-                <!-- <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ekranas"></use> -->
+      
               </svg>
             </button>
           </li>
@@ -89,7 +89,7 @@
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#language"></use>
               </svg>
                  </a>
-                
+    
           </li>
     
     
@@ -215,21 +215,49 @@
     
     </div>
     <div id="side-menu-right" class="side-menu side-menu--right side-menu--right--closed">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            <a class="nav-link active" id="activity-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="true">Activity</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+              <div class="side-menu__tab-activity">
+                <div class="side-menu__tab-activity__content">
+                  <p> 5 minutes ago</p>
+                  <h5> <a href="#">John Doe</a> Uploaded Foto </h5>
+                  <h6>Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+                </div>
+                <div class="side-menu__tab-activity">
+                  <div class="side-menu__tab-activity__content">
+                    <p> 5 minutes ago</p>
+                    <h5> <a href="#">John Doe</a> Uploaded Foto </h5>
+                    <h6>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+                  </div>
+                </div>
+                <div class="side-menu__tab-activity">
+                  <div class="side-menu__tab-activity__content">
+                    <p> 5 minutes ago</p>
+                    <h5> <a href="#">John Doe</a> Uploaded Foto </h5>
+                    <h6>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+                  </div>
+                </div>
+                <div class="side-menu__tab-activity">
+                  <div class="side-menu__tab-activity__content">
+                    <p> 5 minutes ago</p>
+                    <h5> <a href="#">John Doe</a> Uploaded Foto </h5>
+                    <h6>Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+              <div class="side-menu__tab-settings">
+              </div>
+          </div>
         </div>
     </div>
 

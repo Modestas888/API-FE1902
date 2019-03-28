@@ -9978,6 +9978,38 @@ input, button {
 .side-menu--right--closed {
   right: -240px;
 }
+.side-menu__tab-activity {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 20px;
+  border-left: 5px #fff;
+}
+.side-menu__tab-activity__content {
+  padding-left: 10px;
+  border-left: 5px solid blue;
+  margin-left: 20px;
+  position: relative;
+}
+.side-menu__tab-activity__content:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -8px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
+.side-menu__tab-activity__content p {
+  font-size: 8px;
+}
+.side-menu__tab-activity__content h5 {
+  font-size: 14px;
+}
+.side-menu__tab-activity__content h6 {
+  font-size: 12px;
+  padding: 10px;
+}
 .side-menu__lists__list {
   padding: 12px;
   font-size: 12px;
@@ -10184,4 +10216,50 @@ input, button {
 }
 .login .wrap .btn-green:active {
   background: #176437;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.btn-success {
+  height: 34px;
+}
+
+.btn-danger {
+  height: 34px;
+}
+
+.boxes--skill {
+  width: 294px;
+  height: 232px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 467px;
+  width: 165px;
+}
+
+.profile-imagine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }

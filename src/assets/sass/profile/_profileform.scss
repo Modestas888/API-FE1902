@@ -1,6 +1,51 @@
-// .alignleft {
-// 	float: left;
-// }
-// .alignright {
-// 	float: right;
-// }
+.alignleft {
+	float: left;
+	// font-size: 12px;
+}
+.alignright {
+	float: right;
+	// font-size: 10px
+}
+.btn-success{
+height: 34px;
+}
+.btn-danger{
+	height: 34px;
+}
+
+
+.boxes{
+
+	&--skill {
+		width: 294px;
+    height: 232px;
+	}
+}
+.profile{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+height: 467px;
+width: 165px;
+}
+.profile-imagine{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: end;
+    -ms-flex-align: end;
+        align-items: flex-end;
+}
+.buttons{
+	width: 250px;
+
+	padding-left: 34px;
+}

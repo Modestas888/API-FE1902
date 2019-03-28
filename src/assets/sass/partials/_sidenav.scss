@@ -21,7 +21,51 @@
         right: -$nav-left-width;
 
       }
+
     }
+    &__tab-activity{
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-right: 20px;
+      border-left: 5px #fff;
+      &__content{
+            padding-left: 10px;
+        border-left: 5px solid blue;
+        margin-left: 20px;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: -8px;
+          width: 10px;
+          height: 10px;
+          background: red;
+          border-radius: 50%;
+        }
+
+      p {
+          font-size:8px;
+
+      }
+      h5 {
+        font-size:14px;
+
+
+      }
+      h6 {
+          font-size:12px;
+          padding: 10px;
+
+      }
+      }
+
+
+    }
+
+      &__tab-activity{
+
+      }
     padding: 20px 0 80px;
     &__lists {
         &__list {
